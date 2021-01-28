@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div style="width: 100%;">
+    <h1 style="text-align: center;">TMDB quick search</h1>
+    <form id="main" style="
+      display: flex; 
+      flex-direction: column; 
+      justify-content: space-around; 
+      max-width: 300px; 
+      margin: 0 auto; 
+      height: 200px;
+    ">
+      <input type="text" id="key" placeholder="TMDB API key">
+      <select id="type">
+        <option value="movie">Movies</option>
+        <option value="tv">Tv series</option>
+        <option value="all">All</option>
+      </select>
+      <select id="time">
+        <option value="day">Day</option>
+        <option value="week">Week</option>
+      </select>
+      <select id="lang">
+        <option value="ru">RU</option>
+        <option value="en">EN</option>
+      </select>
+      <button id="search">Search</button>
+    </form>
+    <div id="result" style="
+      display: flex; 
+      flex-direction: column; 
+      justify-content: space-around; 
+      max-width: 300px; 
+      margin: 0 auto;
+    "></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
